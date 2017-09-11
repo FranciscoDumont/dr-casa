@@ -1,0 +1,26 @@
+import Enfermedades.*
+import Personas.*
+
+describe "Test de emfermedades" {
+	//Enfermedades
+	var malaria = new EnfermedadInfecciosa(500)
+	var otitis = new EnfermedadInfecciosa(100)
+	var lupus = new EnfermedadAutoinmune(1000)
+
+	var otraMalaria = new EnfermedadInfecciosa(800)
+	
+	//Personas
+	var logan = new Persona(36,3000000)
+ 	var frank = new Persona(36,3500000)
+
+	fixture {
+		logan.contraerEnfermedad(malaria)
+		logan.contraerEnfermedad(otitis)
+		logan.contraerEnfermedad(lupus)	
+	}
+	
+	test "Hacer que Frank contraiga la enfermedad del ítem b)." {
+		assert.equal(enfermedades)
+	}
+
+}
